@@ -1,0 +1,13 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.app-container {
+  height: 100%;
+}

@@ -1,0 +1,59 @@
+.app-container {
+
+    display: flex;
+}
+
+.app-main {
+    flex-grow: 1;
+    margin-left: 170px;
+    /* Same as sidebar width */
+    transition: margin-left 0.3s;
+}
+
+.app-header {
+    background-color: #2b6d4f;
+    /* A slightly different shade of green */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    /* Slightly rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    /* A bit more pronounced shadow */
+    margin-bottom: 25px;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    /* Slightly larger */
+    font-weight: bold;
+    /* Making it bold */
+    font-family: 'Roboto', sans-serif;
+    /* A more modern font */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Adjusting letter spacing */
+}
+
+/* Optional: Add a subtle animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.app-header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .app-main {
+        margin-left: 100px;
+        /* Same as sidebar's responsive width */
+    }
+}

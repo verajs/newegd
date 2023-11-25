@@ -1,0 +1,112 @@
+.lists-container {
+    display: flex;
+    flex-direction: column;
+    /* Align items in a column */
+    width: 100%;
+    /* Full width */
+
+    box-sizing: border-box;
+}
+
+.app-header {
+    background-color: #FFFFFF;
+    /* A slightly different shade of green */
+    color: white;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    /* Slightly rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    /* A bit more pronounced shadow */
+    margin-bottom: 25px;
+}
+
+.list-card {
+    background-color: #fff;
+    /* White background */
+    margin-bottom: 20px;
+    /* Space between cards */
+    padding: 20px;
+
+    /* Padding inside the card */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.list-card:hover {
+    transform: translateY(-5px);
+    /* Slight raise effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.list-title {
+    margin: 0 0 10px 0;
+    /* Spacing below the title */
+    color: #333;
+    /* Title color */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+}
+
+.ship-button {
+    background-color: #4CAF50;
+    /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ship-button:hover {
+    background-color: #369c3c;
+    /* Darker shade on hover */
+}
+
+.refresh-button {
+    
+    background: none;
+    border: none;
+    padding: 0;
+    padding-top: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s;
+    box-shadow: none;
+    /* No shadow initially */
+}
+
+.refresh-button svg {
+    fill: #ffffff;
+    /* Original fill color */
+    transition: fill 0.3s;
+    /* Smooth transition for the fill color */
+}
+
+
+
+.refresh-button:hover svg {
+    fill: #e0e0e0;
+    /* Lighter color on hover */
+}
+
+/* Further shadow increase on active to show it's being pressed */
+.refresh-button:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+    /* Slightly shift the button down */
+}
+
+.refresh-button:active svg {
+    fill: #c0c0c0;
+    /* Even lighter color on active */
+}
